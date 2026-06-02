@@ -12,7 +12,7 @@ def send_discord_webhook(webhook_url, title, content):
             {
                 "title": f"🚀 {title}",
                 "description": content,
-                "color": 5763719,  # 綠色邊條 (十進位顏色碼)
+                "color": 15277667,  # 邊條 (十進位顏色碼)
                 "footer": {
                     "text": "由 Github Actions 自動觸發"
                 }
