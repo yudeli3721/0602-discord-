@@ -13,7 +13,7 @@ def send_discord_webhook(webhook_url, title, content):
                 "description": content,
                 "color": 15277667,  # 邊條 (十進位顏色碼)
                 "footer": {
-                    "text": "由 Streamlit 按鈕手動觸發"
+                    "text": "by阿乓(手動傳送)"
                 }
             }
         ]
@@ -32,7 +32,7 @@ WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 
 
 input_title = st.text_input("請輸入通知標題：", value="測試通知")
-input_content = st.text_area("請輸入通知內容：", value="by阿乓")
+input_content = st.text_area("請輸入通知內容：", value="內文")
 
 st.divider() # 畫一條分隔線
 
