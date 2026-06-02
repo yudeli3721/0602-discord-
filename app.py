@@ -6,7 +6,7 @@ import streamlit as st
 def send_discord_webhook(webhook_url, title, content):
     """直接發送漂亮的卡片訊息到 Discord"""
     payload = {
-        "content": "!! **來自 Streamlit 網頁的即時通知！**",
+        "content": "**即時通知！**",
         "embeds": [
             {
                 "title": f"!! {title}",
@@ -32,7 +32,7 @@ WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 
 
 input_title = st.text_input("請輸入通知標題：", value="測試通知")
-input_content = st.text_area("請輸入通知內容：", value="這是一則從 Streamlit 網頁直接觸發的 Discord 訊息！")
+input_content = st.text_area("請輸入通知內容：", value="by阿乓")
 
 st.divider() # 畫一條分隔線
 
