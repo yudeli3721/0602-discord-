@@ -9,7 +9,7 @@ def send_discord_webhook(webhook_url, title, content):
         "content": "**即時通知！**",
         "embeds": [
             {
-                "title": f"!! {title}",
+                "title": f" {title}",
                 "description": content,
                 "color": 15277667,  # 邊條 (十進位顏色碼)
                 "footer": {
