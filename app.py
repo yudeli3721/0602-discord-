@@ -6,12 +6,12 @@ import streamlit as st
 def send_discord_webhook(webhook_url, title, content):
     """直接發送漂亮的卡片訊息到 Discord"""
     payload = {
-        "content": "!! **提醒！**",
+        "content": "!! **來自 Streamlit 網頁的即時通知！**",
         "embeds": [
             {
                 "title": f"!! {title}",
                 "description": content,
-                "color": #FF7575,  # 淡紅色邊條 (十進位顏色碼)
+                "color": 5763719,  # 綠色邊條 (十進位顏色碼)
                 "footer": {
                     "text": "由 Streamlit 按鈕手動觸發"
                 }
