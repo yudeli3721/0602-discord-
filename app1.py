@@ -7,7 +7,7 @@ import requests
 def send_discord_webhook(webhook_url, title, content):
     """直接發送漂亮的卡片訊息到 Discord"""
     payload = {
-        "content": "📢 **來自 Streamlit 網頁的即時通知！**",
+        "content": "📢 **定時提醒！**",
         "embeds": [
             {
                 "title": f"🚀 {title}",
@@ -25,4 +25,4 @@ def send_discord_webhook(webhook_url, title, content):
     return response.status_code
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 
-status = send_discord_webhook(WEBHOOK_URL, "沒事", "測試")
+status = send_discord_webhook(WEBHOOK_URL, "02審", "6/11")
