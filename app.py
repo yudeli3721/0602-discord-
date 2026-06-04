@@ -6,7 +6,7 @@ import streamlit as st
 def send_discord_webhook(webhook_url, title, content):
     """直接發送漂亮的卡片訊息到 Discord"""
     payload = {
-        "content": "**即時通知！**",
+        "content": "**📢 即時通知！**",
         "embeds": [
             {
                 "title": f" {title}",
