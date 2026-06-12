@@ -7,10 +7,10 @@ import requests
 def send_discord_webhook(webhook_url, title, content):
     """直接發送漂亮的卡片訊息到 Discord"""
     payload = {
-        "content": "📢 **定時提醒！**",
+        "content": "📢 **注意！**",
         "embeds": [
             {
-                "title": f"🚀 {title}",
+                "title": f" {title}",
                 "description": content,
                 "color": 15277667,  # 邊條 (十進位顏色碼)
                 "footer": {
@@ -25,4 +25,4 @@ def send_discord_webhook(webhook_url, title, content):
     return response.status_code
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 
-status = send_discord_webhook(WEBHOOK_URL, "02審", "6/11")
+status = send_discord_webhook(WEBHOOK_URL, "記得喝水", "@薛MANO小朋友")
